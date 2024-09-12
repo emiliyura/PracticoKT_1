@@ -6,6 +6,9 @@ plugins {
 android {
     namespace = "com.example.myapplication"
     compileSdk = 34
+    viewBinding{
+        enable = true
+    }
 
     defaultConfig {
         applicationId = "com.example.myapplication"
@@ -33,12 +36,14 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.navigation:navigation-fragment-ktx: 2.7.0")
+    implementation("androidx.navigation:navigation-ui-ktx: 2.7.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.navigation.runtime.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
