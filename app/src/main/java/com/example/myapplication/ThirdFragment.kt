@@ -20,11 +20,11 @@ class ThirdFragment : Fragment() {
         binding = FragmentThirdBinding.inflate(inflater, container, false)
 
         binding.btnBack.setOnClickListener {
-            // Возврат к предыдущему фрагменту
+            
             findNavController().popBackStack()
         }
 
-        // Возвращение корневого View разметки фрагмента
+    
         return binding.root
     }
 }
