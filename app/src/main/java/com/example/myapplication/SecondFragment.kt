@@ -16,7 +16,7 @@ class SecondFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Создание экземпляра класса FragmentSecondBinding и связывание его с разметкой фрагмента
+        
         binding = FragmentSecondBinding.inflate(inflater, container, false)
 
         binding.btnNext.setOnClickListener {
@@ -25,11 +25,12 @@ class SecondFragment : Fragment() {
         }
 
         binding.btnBack.setOnClickListener {
-            // Возврат к предыдущему фрагменту
+            
             findNavController().popBackStack()
         }
 
-        // Возвращение корневого View разметки фрагмента
+        
         return binding.root
     }
 }
+    
