@@ -24,7 +24,7 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
         }
 
-        // Возвращение корневого View разметки фрагмента
+        
         return binding.root
     }
 }
